@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title></title>
+<style type="text/css">
+
+
+.logout {
+display:flex;
+justify-content: space-between;
+top:0px;
+right:0px;
+}
+
+#p1 {
+font-size:30px;
+margin-top:0px;
+font-weight: bold;
+text-shadow: 0px 0px 4px orange;
+}
+
+#logout {
+color:black;
+font-size:16px;
+font-weight:500;
+margin-top:10px;
+height:13px;
+text-decoration:none;
+}
+
+#logout:visited {
+color: black;
+}
+
+h1 {
+color:orange;
+text-align:center;
+font-size: 50px;
+font-weight:bold;
+text-shadow: 0px 0px 4px black;
+margin-bottom: 0px;
+}
+
+#food-choices {
+text-align: center;
+font-size: 30px;
+margin-top: 5px;
+}
+
+.food {
+display:flex;
+justify-content: space-evenly;
+text-align: center;
+font-size:22px;
+font-weight: bold;
+}
+
+.Picture {
+height:100px;
+width:120px;
+border-radius: 50%;
+}
+
+
+.Image-container {
+border:2px solid orange;
+box-shadow: 0px 0px 5px ;
+background-color: orange;
+margin-bottom: 50px;
+}
+
+
+.Image-container:hover {
+color: orange;
+background-color: rgb(230, 233, 237) ;
+
+}
+
+
+h2 {
+font-size: 26px;
+font-weight: bold;
+
+}
+
+
+.recent {
+display:flex;
+justify-content:space-evenly;
+text-align: center;
+}
+
+.New-boxes {
+background-color: rgb(230, 233, 237) ;
+border: 2px solid ;
+font-size: 22px;
+font-weight: 500;
+border-radius: 6px;
+text-align: center;
+position:relative;
+}
+
+.New-boxes:hover {
+color: black;
+background-color: orange;
+}
+
+.boxed-pics {
+width: 150px;
+height: 160px;
+border-radius:30px;
+padding: 10px;
+margin-top: 20px;
+}
+
+.New-texts {
+font-size: 26px;
+width: 50px;
+font-weight: bold;
+background-color: orange;
+border-radius: 1px;
+position:absolute ;
+top: 0px;
+left: 37%;
+}
+
+
+.order {
+width: 85%;
+height:50px;
+text-align:center;
+background-color:white ;
+position: fixed;
+bottom: 45px;
+border: 2px solid orange;
+border-radius:30px;
+margin-left: 5%;
+margin-right: 5%;
+
+
+}
+
+.order:active {
+color:white;
+background-color: orange;
+
+}
+
+#order-button {
+font-size: 20px;
+font-weight: bold;
+padding-top: 16px;
+border-style:none;
+background-color:transparent;
+}
+
+#order-button:active {
+color: white;
+text-transform: uppercase;
+}
+
+</style>
+</head>
+<body>
+
+<div class="logout">
+<p id="p1"> Food X </p>
+
+<a href="foodx.html" id="logout">
+Log out
+</a>
+</div>
+
+<header>
+<h1> <u>Food Menu  </u></h1>
+
+<p id="food-choices"> Choose your best food and enjoy</p>
+
+</header>
+
+<main class="food">
+<div class="Image-container">
+<a target="_blank" href="#" >
+<img src="Images/Food1.jpg" alt="Fruits"  class="Picture"> </a>
+<div class="description"> Fruits</div>
+</div>
+<div class="Image-container">
+<a target="_blank" href="#" >
+<img src="Images/Food2.jpg" alt="Pasteries" class="Picture">
+</a>
+<div class="description"> Pasteries</div>
+</div>
+
+<div class="Image-container">
+<a target="_blank" href="#" >
+<img src="Images/Food3.jpg" alt="Food" class="Picture">
+</a> 
+<div class="description"> Food</div>
+</div>
+
+</main>
+
+<h2> Recent orders</h2>
+
+<div class="recent">
+<div class="New-boxes">
+<div class="New-texts"> New </div>
+<a target="_blank" href="#" >
+<img src="Images/Food3.jpg" alt="Food" class="boxed-pics">
+</a> 
+<div class="description"> Food</div>
+</div>
+
+<div class="New-boxes">
+<div class="New-texts"> New </div>
+<a target="_blank" href="#" >
+<img src="Images/Food3.jpg" alt="Food" class="boxed-pics">
+</a> 
+<div class="description"> Food</div>
+</div>
+</div>
+
+<form action="https://paystack.com"  method="post">
+<label for="order-button" class="order">
+<button type="submit" id="order-button"> Order Now</button>
+
+</label>
+</form>
+
+
+</body>
+</html>
